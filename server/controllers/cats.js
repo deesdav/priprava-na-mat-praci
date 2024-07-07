@@ -1,4 +1,4 @@
-const Cat = require("../models/cats");
+  const Cat = require("../models/cats");
 
 exports.getAllCats = async (req, res) => {
   try {

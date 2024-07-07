@@ -48,8 +48,9 @@ exports.updateDog = async (req, res) => {
   try {
     const data = {
       name: req.body.name,
-      tail: req.body.tail,
-      speed: req.body.speed,
+      breed: req.body.breed,
+      age: req.body.age,
+      weight: req.body.weight,
     };
     const result = await Dog.findByIdAndUpdate(req.params.id, data);
     if (result) {
@@ -70,8 +71,9 @@ exports.createDog = async (req, res) => {
   try {
     const data = new Dog({
       name: req.body.name,
-      tail: req.body.tail,
-      speed: req.body.speed,
+      breed: req.body.breed,
+      age: req.body.age,
+      weight: req.body.weight,
     });
     const result = await data.save();
     if (result) {

@@ -6,13 +6,14 @@ var logger = require('morgan');
 const cors = require("cors");
 const mongoose = require('mongoose');
 mongoose
-.connect('')
+.connect('mongodb+srv://admin:adminadmin@cluster0.zyqippa.mongodb.net/mongodbut?retryWrites=true&w=majority')
 .then(() => console.log("Database connected"))
 .catch((err) => console.log(err));
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var catsRouter = require('./routes/cats');
+var tasksRouter = require('./routes/tasks');
 var dogsRouter = require('./routes/dogs');
 
 var app = express();
@@ -32,6 +33,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 //http://localhost:3000/cats/
 app.use('/cats', catsRouter);
+app.use('/tasks', tasksRouter);
 app.use('/dogs', dogsRouter);
 
 // catch 404 and forward to error handler

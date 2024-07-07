@@ -1,9 +1,10 @@
 const mongoose = require("mongoose");
 
-const schema = mongoose.Schema({
+const Schema = mongoose.Schema({
   name: { type: String, required: true },
-  tail: { type: Boolean, required: true },
-  speed: { type: Number, required: true },
+  breed: { type: String, required: true },
+  age: { type: Number, required: true },
+  weight: { type: Number, required: true },
 });
 
-module.exports = mongoose.model("Dog", schema);
+module.exports = mongoose.model("Dog", Schema);

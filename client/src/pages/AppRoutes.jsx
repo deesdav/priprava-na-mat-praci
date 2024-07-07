@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainPage from "./MainPage/MainPage";
+
 import CatView from "./CatView/CatView";
 import CatList from "./CatList/CatList";
 import CatCreateForm from "./CatCreateForm/CatCreateForm";
@@ -7,17 +8,46 @@ import CatUpdateForm from "./CatUpdateForm/CatUpdateForm";
 import CreatedCat from "./CatCreateForm/CreatedCat";
 import CatDeleted from "./CatView/CatDeleted";
 
+import TaskView from "./TaskView/TaskView";
+import TaskList from "./TaskList/TaskList";
+import TaskCreateForm from "./TaskCreateForm/TaskCreateForm";
+import TaskUpdateForm from "./TaskUpdateForm/TaskUpdateForm";
+import CreatedTask from "./TaskCreateForm/CreatedTask";
+import TaskDeleted from "./TaskView/TaskDeleted";
+
+import DogView from "./DogView/DogView";
+import DogList from "./DogList/DogList";
+import DogCreateForm from "./DogCreateForm/DogCreateForm";
+import DogUpdateForm from "./DogUpdateForm/DogUpdateForm";
+import CreatedDog from "./DogCreateForm/CreatedDog";
+import DogDeleted from "./DogView/DogDeleted";
+
 export default function AppRoutes() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<MainPage />} />
+
         <Route path="/cat/:id" element={<CatView />} />
         <Route path="/cats" element={<CatList />} />
         <Route path="/createcat" element={<CatCreateForm />} />
         <Route path="/updatecat/:id" element={<CatUpdateForm />} />
         <Route path="/createdcat/:id" element={<CreatedCat />} />
         <Route path="/deletedcat/:id" element={<CatDeleted />} />
+
+        <Route path="/task/:id" element={<TaskView />} />
+        <Route path="/tasks" element={<TaskList />} />
+        <Route path="/createtask" element={<TaskCreateForm />} />
+        <Route path="/updatetask/:id" element={<TaskUpdateForm />} />
+        <Route path="/createdtask/:id" element={<CreatedTask />} />
+        <Route path="/deletedtask/:id" element={<TaskDeleted />} />
+
+        <Route path="/dog/:id" element={<DogView />} />
+        <Route path="/dogs" element={<DogList />} />
+        <Route path="/createdog" element={<DogCreateForm />} />
+        <Route path="/updatedog/:id" element={<DogUpdateForm />} />
+        <Route path="/createddog/:id" element={<CreatedDog />} />
+        <Route path="/deleteddog/:id" element={<DogDeleted />} />
       </Routes>
     </BrowserRouter>
   );
