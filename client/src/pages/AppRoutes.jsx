@@ -50,6 +50,34 @@ import EmployeeUpdateForm from "./EmployeeUpdateForm/EmployeeUpdateForm";
 import CreatedEmployee from "./EmployeeCreateForm/CreatedEmployee";
 import EmployeeDeleted from "./EmployeeView/EmployeeDeleted";
 
+import EventView from "./EventView/EventView";
+import EventList from "./EventList/EventList";
+import EventCreateForm from "./EventCreateForm/EventCreateForm";
+import EventUpdateForm from "./EventUpdateForm/EventUpdateForm";
+import CreatedEvent from "./EventCreateForm/CreatedEvent";
+import EventDeleted from "./EventView/EventDeleted";
+
+import ProductView from "./ProductView/ProductView";
+import ProductList from "./ProductList/ProductList";
+import ProductCreateForm from "./ProductCreateForm/ProductCreateForm";
+import ProductUpdateForm from "./ProductUpdateForm/ProductUpdateForm";
+import CreatedProduct from "./ProductCreateForm/CreatedProduct";
+import ProductDeleted from "./ProductView/ProductDeleted";
+
+import ReviewView from "./ReviewView/ReviewView";
+import ReviewList from "./ReviewList/ReviewList";
+import ReviewCreateForm from "./ReviewCreateForm/ReviewCreateForm";
+import ReviewUpdateForm from "./ReviewUpdateForm/ReviewUpdateForm";
+import CreatedReview from "./ReviewCreateForm/CreatedReview";
+import ReviewDeleted from "./ReviewView/ReviewDeleted";
+
+import MusicalbumView from "./MusicalbumView/MusicalbumView";
+import MusicalbumList from "./MusicalbumList/MusicalbumList";
+import MusicalbumCreateForm from "./MusicalbumCreateForm/MusicalbumCreateForm";
+import MusicalbumUpdateForm from "./MusicalbumUpdateForm/MusicalbumUpdateForm";
+import CreatedMusicalbum from "./MusicalbumCreateForm/CreatedMusicalbum";
+import MusicalbumDeleted from "./MusicalbumView/MusicalbumDeleted";
+
 export default function AppRoutes() {
   return (
     <BrowserRouter>
@@ -105,6 +133,33 @@ export default function AppRoutes() {
         <Route path="/createdemployee/:id" element={<CreatedEmployee />} />
         <Route path="/deletedemployee/:id" element={<EmployeeDeleted />} />
 
+        <Route path="/event/:id" element={<EventView />} />
+        <Route path="/events" element={<EventList />} />
+        <Route path="/createevent" element={<EventCreateForm />} />
+        <Route path="/updateevent/:id" element={<EventUpdateForm />} />
+        <Route path="/createdevent/:id" element={<CreatedEvent />} />
+        <Route path="/deletedevent/:id" element={<EventDeleted />} />
+
+        <Route path="/product/:id" element={<ProductView />} />
+        <Route path="/products" element={<ProductList />} />
+        <Route path="/createproduct" element={<ProductCreateForm />} />
+        <Route path="/updateproduct/:id" element={<ProductUpdateForm />} />
+        <Route path="/createdproduct/:id" element={<CreatedProduct />} />
+        <Route path="/deletedproduct/:id" element={<ProductDeleted />} />
+
+        <Route path="/review/:id" element={<ReviewView />} />
+        <Route path="/reviews" element={<ReviewList />} />
+        <Route path="/createreview" element={<ReviewCreateForm />} />
+        <Route path="/updatereview/:id" element={<ReviewUpdateForm />} />
+        <Route path="/createdreview/:id" element={<CreatedReview />} />
+        <Route path="/deletedreview/:id" element={<ReviewDeleted />} />
+
+        <Route path="/musicalbum/:id" element={<MusicalbumView />} />
+        <Route path="/musicalbums" element={<MusicalbumList />} />
+        <Route path="/createmusicalbum" element={<MusicalbumCreateForm />} />
+        <Route path="/updatemusicalbum/:id" element={<MusicalbumUpdateForm />} />
+        <Route path="/createdmusicalbum/:id" element={<CreatedMusicalbum />} />
+        <Route path="/deletedmusicalbum/:id" element={<MusicalbumDeleted />} />
       </Routes>
     </BrowserRouter>
   );

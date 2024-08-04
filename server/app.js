@@ -19,6 +19,10 @@ var booksRouter = require('./routes/books');
 var carsRouter = require('./routes/cars');
 var moviesRouter = require('./routes/movies');
 var employeesRouter = require('./routes/employees');
+var eventsRouter = require('./routes/events');
+var productsRouter = require('./routes/products');
+var reviewsRouter = require('./routes/reviews');
+var musicalbumsRouter = require('./routes/musicalbums');
 
 var app = express();
 
@@ -43,6 +47,10 @@ app.use('/books', booksRouter);
 app.use('/cars', carsRouter);
 app.use('/movies', moviesRouter);
 app.use('/employees', employeesRouter);
+app.use('/events', eventsRouter);
+app.use('/products', productsRouter);
+app.use('/reviews', reviewsRouter);
+app.use('/musicalbums', musicalbumsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

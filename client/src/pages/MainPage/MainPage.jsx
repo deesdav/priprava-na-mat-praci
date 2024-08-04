@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function MainPage() {
   return (
     <>
-    <h1>Server & Client</h1>
+      <h1>Server & Client</h1>
       <Link to={"/createcat"}>
         <p className="linkToClick">Cat create form</p>
       </Link>
@@ -54,6 +54,33 @@ export default function MainPage() {
         <p className="linkToClick">Employee list</p>
       </Link>
 
+      <Link to={"/createevent"}>
+        <p className="linkToClick">Event create form</p>
+      </Link>
+      <Link to={"/events"}>
+        <p className="linkToClick">Event list</p>
+      </Link>
+
+      <Link to={"/createproduct"}>
+        <p className="linkToClick">Product create form</p>
+      </Link>
+      <Link to={"/products"}>
+        <p className="linkToClick">Product list</p>
+      </Link>
+
+      <Link to={"/createreview"}>
+        <p className="linkToClick">Review create form</p>
+      </Link>
+      <Link to={"/reviews"}>
+        <p className="linkToClick">Review list</p>
+      </Link>
+
+      <Link to={"/createmusicalbum"}>
+        <p className="linkToClick">Music Album create form</p>
+      </Link>
+      <Link to={"/musicalbums"}>
+        <p className="linkToClick">Music Album list</p>
+      </Link>
     </>
   );
 }
