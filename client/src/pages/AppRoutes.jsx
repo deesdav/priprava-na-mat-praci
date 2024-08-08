@@ -78,6 +78,28 @@ import MusicalbumUpdateForm from "./MusicalbumUpdateForm/MusicalbumUpdateForm";
 import CreatedMusicalbum from "./MusicalbumCreateForm/CreatedMusicalbum";
 import MusicalbumDeleted from "./MusicalbumView/MusicalbumDeleted";
 
+import SportteamView from "./SportteamView/SportteamView";
+import SportteamList from "./SportteamList/SportteamList";
+import SportteamCreateForm from "./SportteamCreateForm/SportteamCreateForm";
+import SportteamUpdateForm from "./SportteamUpdateForm/SportteamUpdateForm";
+import CreatedSportteam from "./SportteamCreateForm/CreatedSportteam";
+import SportteamDeleted from "./SportteamView/SportteamDeleted";
+
+import PlaylistView from "./PlaylistView/PlaylistView";
+import PlaylistList from "./PlaylistList/PlaylistList";
+import PlaylistCreateForm from "./PlaylistCreateForm/PlaylistCreateForm";
+import PlaylistUpdateForm from "./PlaylistUpdateForm/PlaylistUpdateForm";
+import CreatedPlaylist from "./PlaylistCreateForm/CreatedPlaylist";
+import PlaylistDeleted from "./PlaylistView/PlaylistDeleted";
+
+import CourseView from "./CourseView/CourseView";
+import CourseList from "./CourseList/CourseList";
+import CourseCreateForm from "./CourseCreateForm/CourseCreateForm";
+import CourseUpdateForm from "./CourseUpdateForm/CourseUpdateForm";
+import CreatedCourse from "./CourseCreateForm/CreatedCourse";
+import CourseDeleted from "./CourseView/CourseDeleted";
+
+
 export default function AppRoutes() {
   return (
     <BrowserRouter>
@@ -160,6 +182,28 @@ export default function AppRoutes() {
         <Route path="/updatemusicalbum/:id" element={<MusicalbumUpdateForm />} />
         <Route path="/createdmusicalbum/:id" element={<CreatedMusicalbum />} />
         <Route path="/deletedmusicalbum/:id" element={<MusicalbumDeleted />} />
+     
+        <Route path="/sportteam/:id" element={<SportteamView />} />
+        <Route path="/sportteams" element={<SportteamList />} />
+        <Route path="/createsportteam" element={<SportteamCreateForm />} />
+        <Route path="/updatesportteam/:id" element={<SportteamUpdateForm />} />
+        <Route path="/createdsportteam/:id" element={<CreatedSportteam />} />
+        <Route path="/deletedsportteam/:id" element={<SportteamDeleted />} />
+
+        <Route path="/playlist/:id" element={<PlaylistView />} />
+        <Route path="/playlists" element={<PlaylistList />} />
+        <Route path="/createplaylist" element={<PlaylistCreateForm />} />
+        <Route path="/updateplaylist/:id" element={<PlaylistUpdateForm />} />
+        <Route path="/createdplaylist/:id" element={<CreatedPlaylist />} />
+        <Route path="/deletedplaylist/:id" element={<PlaylistDeleted />} />
+
+        <Route path="/course/:id" element={<CourseView />} />
+        <Route path="/courses" element={<CourseList />} />
+        <Route path="/createcourse" element={<CourseCreateForm />} />
+        <Route path="/updatecourse/:id" element={<CourseUpdateForm />} />
+        <Route path="/createdcourse/:id" element={<CreatedCourse />} />
+        <Route path="/deletedcourse/:id" element={<CourseDeleted />} />
+
       </Routes>
     </BrowserRouter>
   );

@@ -81,6 +81,28 @@ export default function MainPage() {
       <Link to={"/musicalbums"}>
         <p className="linkToClick">Music Album list</p>
       </Link>
+
+      <Link to={"/createsportteam"}>
+        <p className="linkToClick">Sport team create form</p>
+      </Link>
+      <Link to={"/sportteams"}>
+        <p className="linkToClick">Sport team list</p>
+      </Link>
+
+      <Link to={"/createplaylist"}>
+        <p className="linkToClick">Playlist create form</p>
+      </Link>
+      <Link to={"/playlists"}>
+        <p className="linkToClick">Playlist list</p>
+      </Link>
+
+      <Link to={"/createcourse"}>
+        <p className="linkToClick">Course create form</p>
+      </Link>
+      <Link to={"/courses"}>
+        <p className="linkToClick">Course list</p>
+      </Link>
+
     </>
   );
 }

@@ -23,6 +23,9 @@ var eventsRouter = require('./routes/events');
 var productsRouter = require('./routes/products');
 var reviewsRouter = require('./routes/reviews');
 var musicalbumsRouter = require('./routes/musicalbums');
+var sportteamsRouter = require('./routes/sportteams');
+var playlistsRouter = require('./routes/playlists');
+var coursesRouter = require('./routes/courses');
 
 var app = express();
 
@@ -51,6 +54,9 @@ app.use('/events', eventsRouter);
 app.use('/products', productsRouter);
 app.use('/reviews', reviewsRouter);
 app.use('/musicalbums', musicalbumsRouter);
+app.use('/sportteams', sportteamsRouter);
+app.use('/playlists', playlistsRouter);
+app.use('/courses', coursesRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
