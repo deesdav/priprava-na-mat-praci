@@ -99,6 +99,13 @@ import CourseUpdateForm from "./CourseUpdateForm/CourseUpdateForm";
 import CreatedCourse from "./CourseCreateForm/CreatedCourse";
 import CourseDeleted from "./CourseView/CourseDeleted";
 
+import CityView from "./CityView/CityView";
+import CityList from "./CityList/CityList";
+import CityCreateForm from "./CityCreateForm/CityCreateForm";
+import CityUpdateForm from "./CityUpdateForm/CityUpdateForm";
+import CreatedCity from "./CityCreateForm/CreatedCity";
+import CityDeleted from "./CityView/CityDeleted";
+
 
 export default function AppRoutes() {
   return (
@@ -203,6 +210,14 @@ export default function AppRoutes() {
         <Route path="/updatecourse/:id" element={<CourseUpdateForm />} />
         <Route path="/createdcourse/:id" element={<CreatedCourse />} />
         <Route path="/deletedcourse/:id" element={<CourseDeleted />} />
+
+        <Route path="/city/:id" element={<CityView />} />
+        <Route path="/cities" element={<CityList />} />
+        <Route path="/createcity" element={<CityCreateForm />} />
+        <Route path="/updatecity/:id" element={<CityUpdateForm />} />
+        <Route path="/createdcity/:id" element={<CreatedCity />} />
+        <Route path="/deletedcity/:id" element={<CityDeleted />} />
+
 
       </Routes>
     </BrowserRouter>

@@ -26,6 +26,7 @@ var musicalbumsRouter = require('./routes/musicalbums');
 var sportteamsRouter = require('./routes/sportteams');
 var playlistsRouter = require('./routes/playlists');
 var coursesRouter = require('./routes/courses');
+var citiesRouter = require('./routes/cities');
 
 var app = express();
 
@@ -57,6 +58,7 @@ app.use('/musicalbums', musicalbumsRouter);
 app.use('/sportteams', sportteamsRouter);
 app.use('/playlists', playlistsRouter);
 app.use('/courses', coursesRouter);
+app.use('/cities', citiesRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
