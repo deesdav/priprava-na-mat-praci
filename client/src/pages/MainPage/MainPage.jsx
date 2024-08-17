@@ -109,6 +109,21 @@ export default function MainPage() {
       <Link to={"/cities"}>
         <p className="linkToClick">City list</p>
       </Link>
+
+      <Link to={"/createattendance"}>
+        <p className="linkToClick">Attendance create form</p>
+      </Link>
+      <Link to={"/attendances"}>
+        <p className="linkToClick">Attendance list</p>
+      </Link>
+
+      <Link to={"/createcomment"}>
+        <p className="linkToClick">Comment create form</p>
+      </Link>
+      <Link to={"/comments"}>
+        <p className="linkToClick">Comment list</p>
+      </Link>
+
     </>
   );
 }

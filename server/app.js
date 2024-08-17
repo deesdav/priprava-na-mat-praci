@@ -27,6 +27,8 @@ var sportteamsRouter = require('./routes/sportteams');
 var playlistsRouter = require('./routes/playlists');
 var coursesRouter = require('./routes/courses');
 var citiesRouter = require('./routes/cities');
+var attendancesRouter = require('./routes/attendances');
+var commentsRouter = require('./routes/comments');
 
 var app = express();
 
@@ -59,12 +61,14 @@ app.use('/sportteams', sportteamsRouter);
 app.use('/playlists', playlistsRouter);
 app.use('/courses', coursesRouter);
 app.use('/cities', citiesRouter);
+app.use('/attendances', attendancesRouter);
+app.use('/comments', commentsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
 });
-
+ 
 // error handler
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development

@@ -106,6 +106,20 @@ import CityUpdateForm from "./CityUpdateForm/CityUpdateForm";
 import CreatedCity from "./CityCreateForm/CreatedCity";
 import CityDeleted from "./CityView/CityDeleted";
 
+import AttendanceView from "./AttendanceView/AttendanceView";
+import AttendanceList from "./AttendanceList/AttendanceList";
+import AttendanceCreateForm from "./AttendanceCreateForm/AttendanceCreateForm";
+import AttendanceUpdateForm from "./AttendanceUpdateForm/AttendanceUpdateForm";
+import CreatedAttendance from "./AttendanceCreateForm/CreatedAttendance";
+import AttendanceDeleted from "./AttendanceView/AttendanceDeleted";
+
+import CommentView from "./CommentView/CommentView";
+import CommentList from "./CommentList/CommentList";
+import CommentCreateForm from "./CommentCreateForm/CommentCreateForm";
+import CommentUpdateForm from "./CommentUpdateForm/CommentUpdateForm";
+import CreatedComment from "./CommentCreateForm/CreatedComment";
+import CommentDeleted from "./CommentView/CommentDeleted";
+
 
 export default function AppRoutes() {
   return (
@@ -186,10 +200,13 @@ export default function AppRoutes() {
         <Route path="/musicalbum/:id" element={<MusicalbumView />} />
         <Route path="/musicalbums" element={<MusicalbumList />} />
         <Route path="/createmusicalbum" element={<MusicalbumCreateForm />} />
-        <Route path="/updatemusicalbum/:id" element={<MusicalbumUpdateForm />} />
+        <Route
+          path="/updatemusicalbum/:id"
+          element={<MusicalbumUpdateForm />}
+        />
         <Route path="/createdmusicalbum/:id" element={<CreatedMusicalbum />} />
         <Route path="/deletedmusicalbum/:id" element={<MusicalbumDeleted />} />
-     
+
         <Route path="/sportteam/:id" element={<SportteamView />} />
         <Route path="/sportteams" element={<SportteamList />} />
         <Route path="/createsportteam" element={<SportteamCreateForm />} />
@@ -217,6 +234,20 @@ export default function AppRoutes() {
         <Route path="/updatecity/:id" element={<CityUpdateForm />} />
         <Route path="/createdcity/:id" element={<CreatedCity />} />
         <Route path="/deletedcity/:id" element={<CityDeleted />} />
+
+        <Route path="/attendance/:id" element={<AttendanceView />} />
+        <Route path="/attendances" element={<AttendanceList />} />
+        <Route path="/createattendance" element={<AttendanceCreateForm />} />
+        <Route path="/updateattendance/:id" element={<AttendanceUpdateForm />} />
+        <Route path="/createdattendance/:id" element={<CreatedAttendance />} />
+        <Route path="/deletedattendance/:id" element={<AttendanceDeleted />} />
+
+        <Route path="/comment/:id" element={<CommentView />} />
+        <Route path="/comments" element={<CommentList />} />
+        <Route path="/createcomment" element={<CommentCreateForm />} />
+        <Route path="/updatecomment/:id" element={<CommentUpdateForm />} />
+        <Route path="/createdcomment/:id" element={<CreatedComment />} />
+        <Route path="/deletedcomment/:id" element={<CommentDeleted />} />
 
 
       </Routes>
