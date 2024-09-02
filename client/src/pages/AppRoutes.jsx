@@ -120,6 +120,33 @@ import CommentUpdateForm from "./CommentUpdateForm/CommentUpdateForm";
 import CreatedComment from "./CommentCreateForm/CreatedComment";
 import CommentDeleted from "./CommentView/CommentDeleted";
 
+import PhotoView from "./PhotoView/PhotoView";
+import PhotoList from "./PhotoList/PhotoList";
+import PhotoCreateForm from "./PhotoCreateForm/PhotoCreateForm";
+import PhotoUpdateForm from "./PhotoUpdateForm/PhotoUpdateForm";
+import CreatedPhoto from "./PhotoCreateForm/CreatedPhoto";
+import PhotoDeleted from "./PhotoView/PhotoDeleted";
+
+import VideogameView from "./VideogameView/VideogameView";
+import VideogameList from "./VideogameList/VideogameList";
+import VideogameCreateForm from "./VideogameCreateForm/VideogameCreateForm";
+import VideogameUpdateForm from "./VideogameUpdateForm/VideogameUpdateForm";
+import CreatedVideogame from "./VideogameCreateForm/CreatedVideogame";
+import VideogameDeleted from "./VideogameView/VideogameDeleted";
+
+import PodcastView from "./PodcastView/PodcastView";
+import PodcastList from "./PodcastList/PodcastList";
+import PodcastCreateForm from "./PodcastCreateForm/PodcastCreateForm";
+import PodcastUpdateForm from "./PodcastUpdateForm/PodcastUpdateForm";
+import CreatedPodcast from "./PodcastCreateForm/CreatedPodcast";
+import PodcastDeleted from "./PodcastView/PodcastDeleted";
+
+import RestaurantView from "./RestaurantView/RestaurantView";
+import RestaurantList from "./RestaurantList/RestaurantList";
+import RestaurantCreateForm from "./RestaurantCreateForm/RestaurantCreateForm";
+import RestaurantUpdateForm from "./RestaurantUpdateForm/RestaurantUpdateForm";
+import CreatedRestaurant from "./RestaurantCreateForm/CreatedRestaurant";
+import RestaurantDeleted from "./RestaurantView/RestaurantDeleted";
 
 export default function AppRoutes() {
   return (
@@ -249,6 +276,33 @@ export default function AppRoutes() {
         <Route path="/createdcomment/:id" element={<CreatedComment />} />
         <Route path="/deletedcomment/:id" element={<CommentDeleted />} />
 
+        <Route path="/photo/:id" element={<PhotoView />} />
+        <Route path="/photos" element={<PhotoList />} />
+        <Route path="/createphoto" element={<PhotoCreateForm />} />
+        <Route path="/updatephoto/:id" element={<PhotoUpdateForm />} />
+        <Route path="/createdphoto/:id" element={<CreatedPhoto />} />
+        <Route path="/deletedphoto/:id" element={<PhotoDeleted />} />
+
+        <Route path="/videogame/:id" element={<VideogameView />} />
+        <Route path="/videogames" element={<VideogameList />} />
+        <Route path="/createvideogame" element={<VideogameCreateForm />} />
+        <Route path="/updatevideogame/:id" element={<VideogameUpdateForm />} />
+        <Route path="/createdvideogame/:id" element={<CreatedVideogame />} />
+        <Route path="/deletedvideogame/:id" element={<VideogameDeleted />} />
+
+        <Route path="/podcast/:id" element={<PodcastView />} />
+        <Route path="/podcasts" element={<PodcastList />} />
+        <Route path="/createpodcast" element={<PodcastCreateForm />} />
+        <Route path="/updatepodcast/:id" element={<PodcastUpdateForm />} />
+        <Route path="/createdpodcast/:id" element={<CreatedPodcast />} />
+        <Route path="/deletedpodcast/:id" element={<PodcastDeleted />} />
+
+        <Route path="/restaurant/:id" element={<RestaurantView />} />
+        <Route path="/restaurants" element={<RestaurantList />} />
+        <Route path="/createrestaurant" element={<RestaurantCreateForm />} />
+        <Route path="/updaterestaurant/:id" element={<RestaurantUpdateForm />} />
+        <Route path="/createdrestaurant/:id" element={<CreatedRestaurant />} />
+        <Route path="/deletedrestaurant/:id" element={<RestaurantDeleted />} />
 
       </Routes>
     </BrowserRouter>

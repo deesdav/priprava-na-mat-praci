@@ -29,6 +29,10 @@ var coursesRouter = require('./routes/courses');
 var citiesRouter = require('./routes/cities');
 var attendancesRouter = require('./routes/attendances');
 var commentsRouter = require('./routes/comments');
+var photosRouter = require('./routes/photos');
+var videogamesRouter = require('./routes/videogames');
+var podcastsRouter = require('./routes/podcasts');
+var restaurantsRouter = require('./routes/restaurants');
 
 var app = express();
 
@@ -63,6 +67,10 @@ app.use('/courses', coursesRouter);
 app.use('/cities', citiesRouter);
 app.use('/attendances', attendancesRouter);
 app.use('/comments', commentsRouter);
+app.use('/photos', photosRouter);
+app.use('/videogames', videogamesRouter);
+app.use('/podcasts', podcastsRouter);
+app.use('/restaurants', restaurantsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -124,6 +124,33 @@ export default function MainPage() {
         <p className="linkToClick">Comment list</p>
       </Link>
 
+      <Link to={"/createphoto"}>
+        <p className="linkToClick">Photo create form</p>
+      </Link>
+      <Link to={"/photos"}>
+        <p className="linkToClick">Photo list</p>
+      </Link>
+
+      <Link to={"/createvideogame"}>
+        <p className="linkToClick">Videogame create form</p>
+      </Link>
+      <Link to={"/videogames"}>
+        <p className="linkToClick">Videogame list</p>
+      </Link>
+
+      <Link to={"/createpodcast"}>
+        <p className="linkToClick">Podcast create form</p>
+      </Link>
+      <Link to={"/podcasts"}>
+        <p className="linkToClick">Podcast list</p>
+      </Link>
+
+      <Link to={"/createrestaurant"}>
+        <p className="linkToClick">Restaurant create form</p>
+      </Link>
+      <Link to={"/restaurants"}>
+        <p className="linkToClick">Restaurant list</p>
+      </Link>
     </>
   );
 }
