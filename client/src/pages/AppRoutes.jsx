@@ -148,6 +148,13 @@ import RestaurantUpdateForm from "./RestaurantUpdateForm/RestaurantUpdateForm";
 import CreatedRestaurant from "./RestaurantCreateForm/CreatedRestaurant";
 import RestaurantDeleted from "./RestaurantView/RestaurantDeleted";
 
+import PrescriptionView from "./PrescriptionView/PrescriptionView";
+import PrescriptionList from "./PrescriptionList/PrescriptionList";
+import PrescriptionCreateForm from "./PrescriptionCreateForm/PrescriptionCreateForm";
+import PrescriptionUpdateForm from "./PrescriptionUpdateForm/PrescriptionUpdateForm";
+import CreatedPrescription from "./PrescriptionCreateForm/CreatedPrescription";
+import PrescriptionDeleted from "./PrescriptionView/PrescriptionDeleted";
+
 export default function AppRoutes() {
   return (
     <BrowserRouter>
@@ -303,6 +310,13 @@ export default function AppRoutes() {
         <Route path="/updaterestaurant/:id" element={<RestaurantUpdateForm />} />
         <Route path="/createdrestaurant/:id" element={<CreatedRestaurant />} />
         <Route path="/deletedrestaurant/:id" element={<RestaurantDeleted />} />
+
+        <Route path="/prescription/:id" element={<PrescriptionView />} />
+        <Route path="/prescriptions" element={<PrescriptionList />} />
+        <Route path="/createprescription" element={<PrescriptionCreateForm />} />
+        <Route path="/updateprescription/:id" element={<PrescriptionUpdateForm />} />
+        <Route path="/createdprescription/:id" element={<CreatedPrescription />} />
+        <Route path="/deletedprescription/:id" element={<PrescriptionDeleted />} />
 
       </Routes>
     </BrowserRouter>

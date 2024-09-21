@@ -6,9 +6,9 @@ var logger = require('morgan');
 const cors = require("cors");
 const mongoose = require('mongoose');
 mongoose
-.connect('mongodb+srv://admin:adminadmin@cluster0.zyqippa.mongodb.net/mongodbut?retryWrites=true&w=majority')
-.then(() => console.log("Database connected"))
-.catch((err) => console.log(err));
+  .connect('mongodb+srv://admin:adminadmin@cluster0.zyqippa.mongodb.net/mongodbut?retryWrites=true&w=majority')
+  .then(() => console.log("Database connected"))
+  .catch((err) => console.log(err));
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -33,6 +33,7 @@ var photosRouter = require('./routes/photos');
 var videogamesRouter = require('./routes/videogames');
 var podcastsRouter = require('./routes/podcasts');
 var restaurantsRouter = require('./routes/restaurants');
+var prescriptionsRouter = require('./routes/prescriptions');
 
 var app = express();
 
@@ -71,14 +72,15 @@ app.use('/photos', photosRouter);
 app.use('/videogames', videogamesRouter);
 app.use('/podcasts', podcastsRouter);
 app.use('/restaurants', restaurantsRouter);
+app.use('/prescriptions', prescriptionsRouter);
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   next(createError(404));
 });
- 
+
 // error handler
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};

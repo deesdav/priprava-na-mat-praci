@@ -151,6 +151,13 @@ export default function MainPage() {
       <Link to={"/restaurants"}>
         <p className="linkToClick">Restaurant list</p>
       </Link>
+
+      <Link to={"/createprescription"}>
+        <p className="linkToClick">Prescription create form</p>
+      </Link>
+      <Link to={"/prescriptions"}>
+        <p className="linkToClick">Prescription list</p>
+      </Link>
     </>
   );
 }
